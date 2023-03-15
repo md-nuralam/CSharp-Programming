@@ -1,0 +1,30 @@
+using System;
+
+namespace MyProgramming
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int myInt = 20;
+            double myDouble = 5.22D;
+            float myFloat = 3.12345678F;
+            bool myBool = true;
+            char myChar = 'A';
+            string myString = "Hello";
+            string firstName = "Md. Nur ";
+            string middleName = "Alam ";
+            string lastName = "Polash";
+            string fullName = firstName + middleName + lastName;
+
+            Console.WriteLine(myInt);
+            Console.WriteLine(myDouble);
+            Console.WriteLine(myFloat);
+            Console.WriteLine(myBool);
+            Console.WriteLine(myChar);
+            Console.WriteLine(myString);
+            Console.WriteLine("My name is: "+fullName);
+            Console.ReadKey();
+        }
+    }
+}

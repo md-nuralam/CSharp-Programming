@@ -1,0 +1,23 @@
+using System;
+
+namespace MyProgramming
+{
+    class Program
+    {
+       static void Main(string[] args)
+        {
+            //C# Math
+            int x = 10;
+            int y = 20;
+ 
+            Console.WriteLine(Math.Max(x, y));
+            Console.WriteLine(Math.Min(x, y));
+            Console.WriteLine(Math.Round(10.444));
+            Console.WriteLine(Math.Sqrt(64));
+            Console.WriteLine(Math.Abs(-5.55));
+
+            Console.ReadKey();
+
+        }
+    }
+}

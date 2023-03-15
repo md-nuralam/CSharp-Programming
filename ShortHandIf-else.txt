@@ -1,0 +1,17 @@
+using System;
+
+namespace MyProgramming
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //short hand if-else
+            int time = 24;
+            string result = (time < 18) ? "Good Day!" : "Good Evening!";
+            Console.WriteLine(result);
+
+            Console.ReadKey();
+        }
+    }
+}

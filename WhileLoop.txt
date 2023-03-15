@@ -1,0 +1,59 @@
+using System;
+
+namespace MyProgramming
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //while loop
+            int i = 0;
+            while(i<5)
+            {
+                Console.WriteLine(i);
+                i++;
+            }
+
+            //do-while loop
+            int j = 0;
+            do
+            {
+                Console.WriteLine(j);
+                j++;
+
+            }
+            while (j < 5);
+
+            //while loop
+            int k, l;
+            Console.Write("Enter a number: ");
+            k = Convert.ToInt32(Console.ReadLine());
+            l = 0;
+            while(l<=k)
+            {
+                Console.WriteLine(l);
+                l++;
+            }
+
+            //nested while loop
+            int m, n, o;
+            Console.Write("Enter a number: ");
+            m = Convert.ToInt32(Console.ReadLine());
+            n = 1;
+            while(n<=m)
+            {
+                Console.WriteLine();
+                o = 1;
+                while(o<=n)
+                {
+                    Console.Write(o);
+                    o++;
+                }
+                n++;
+
+            }
+
+            Console.ReadKey();
+        }
+    }
+}

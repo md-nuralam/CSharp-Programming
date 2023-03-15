@@ -1,0 +1,16 @@
+using System;
+
+namespace MyProgramming
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Constant
+            const int myNum = 20;
+            //myNum = 30; 
+            //Error! Because myNum=20; is constant.
+            Console.WriteLine(myNum);
+        }
+    }
+}

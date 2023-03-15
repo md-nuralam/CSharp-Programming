@@ -1,0 +1,28 @@
+using System;
+
+namespace MyProgramming
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter Your Name: ");
+            string myName = Console.ReadLine();           
+
+            Console.WriteLine("Enter a integer number :");
+            int myInt = Convert.ToInt32(Console.ReadLine());
+            
+            Console.WriteLine("Enter a double number :");
+            double myDouble = Convert.ToDouble(Console.ReadLine());
+            
+            Console.WriteLine("Enter a long number :");
+            long myLong = Convert.ToInt64(Console.ReadLine());
+            Console.WriteLine("My Name is: " + myName);
+            Console.WriteLine("My integer number is :" + myInt);
+            Console.WriteLine("My double number is :" + myDouble);
+            Console.WriteLine("My long number is: " + myLong);
+
+            Console.ReadKey();
+        }
+    }
+}

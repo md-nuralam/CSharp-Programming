@@ -1,0 +1,48 @@
+using System;
+
+namespace MyProgramming
+{
+    class Program
+    {
+       static void Main(string[] args)
+        {
+            //String
+            string myString = "Hello! ";
+            string myString2 = "Nice to meet you!";
+
+            Console.WriteLine(myString);
+            Console.WriteLine(myString2);
+            Console.WriteLine("The length of String 2 is :" + myString2.Length);
+            Console.WriteLine(myString.ToUpper());
+            Console.WriteLine(myString2.ToLower());
+
+            //Concatenation
+            string fullString = string.Concat(myString, myString2);
+            Console.WriteLine(fullString);
+
+            //String interpolation
+            string fullString2 = $"Full sentance is : {myString} {myString2}";
+            Console.WriteLine(fullString2);
+
+            //Access string
+            Console.WriteLine(myString[0]);
+            Console.WriteLine(myString.IndexOf('H'));
+
+            //Substring
+            string name = "Md. Nur Alam Polash";
+            int charPosition = name.IndexOf('A');
+            string fullName = name.Substring(charPosition);
+            Console.WriteLine(fullName);
+
+            //Special character
+            string text1 = "I Love \"My Country\".";
+            Console.WriteLine(text1);
+            string text2 = "It\'s enough.";
+            Console.WriteLine(text2);
+
+            Console.ReadKey();
+
+
+        }
+    }
+}

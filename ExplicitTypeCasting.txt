@@ -1,0 +1,18 @@
+using System;
+
+namespace MyProgramming
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Explicit Type Casting
+            double myDouble = 3.22;
+            int myInt = (int)myDouble; //Manually Type Casting Double to Int
+
+            Console.WriteLine(myDouble);
+            Console.WriteLine(myInt);
+
+        }
+    }
+}

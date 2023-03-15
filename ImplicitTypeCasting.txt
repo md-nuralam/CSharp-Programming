@@ -1,0 +1,17 @@
+using System;
+
+namespace MyProgramming
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Implicit Type Casting
+            int myInt = 20;
+            double myDouble = myInt; //Autometic casting Int to Double
+
+            Console.WriteLine(myInt);
+            Console.WriteLine(myDouble);
+        }
+    }
+}
