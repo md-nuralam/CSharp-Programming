@@ -1,0 +1,13 @@
+using System;
+
+namespace MyProgramming
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello My name is Md. Nur Alam Polash.");
+            Console.ReadKey();
+        }
+    }
+}
