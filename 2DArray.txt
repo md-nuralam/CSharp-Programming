@@ -1,0 +1,36 @@
+using System;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[,] carList = { { "Ferari", "Lomborgini", "Tesla" }, { "BMW", "Ford", "Mazda" } };
+
+            Console.WriteLine(carList.Length);
+
+            foreach(string car in carList)
+            {
+                Console.WriteLine(car);
+            }
+
+            Console.WriteLine(carList[0, 1]);
+
+            char[,] myChar =  { {'a', 'b', 'c' }, {'d', 'e','f' }};
+
+            Console.WriteLine(myChar.GetLength(0));
+            Console.WriteLine(myChar.GetLength(1));
+
+            for(int i=0; i<myChar.GetLength(0); i++)
+            {
+                for(int j=0; j<myChar.GetLength(1); j++)
+                {
+                    Console.WriteLine(myChar[i,j]);
+                }
+            }
+
+            Console.WriteLine(myChar[0, 2]);
+        }
+    }
+}
