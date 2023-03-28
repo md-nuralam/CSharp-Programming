@@ -1,0 +1,31 @@
+using System;
+
+namespace ConsoleApp
+{
+    class Program
+    {
+        static int MyMethod(int x, int y)
+        {
+            return x + y;
+        }
+
+        static double MyMethod(double x, double y)
+        {
+            return x + y;
+        }
+
+        static void MyMethod(string x)
+        {
+            Console.WriteLine(x);
+        }
+
+        static void Main(string[] args)
+        { 
+            int myInt = MyMethod(2,3);
+            double myDouble = MyMethod(2.22, 3.33);
+            Console.WriteLine(myInt);
+            Console.WriteLine(myDouble);
+            MyMethod("Md. Nur Alam");
+        }
+    }
+}

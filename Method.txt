@@ -1,0 +1,46 @@
+using System;
+using System.Runtime.CompilerServices;
+
+namespace ConsoleApp
+{
+    class Program
+    {
+         static void Name()
+        {
+            Console.WriteLine("My name is Md. Nur Alam Polash.");
+        }
+
+        static void Add(int x, int y)
+        {
+            Console.WriteLine(x + y);
+        }
+
+        static int MyMethod(int x, int y)
+        {
+            int m = x + y;
+            return  m;
+        }
+
+        static void Country(string x="Bangladesh")
+        {
+            Console.WriteLine(x);
+        }
+
+        static int MyMethod2(int x, int y)
+        {
+            return x + y;
+        }
+
+
+        static void Main(string[] args)
+        {
+            Name();
+            Add(3, 2);
+            Console.WriteLine(MyMethod(5,5));
+            Country();
+            Country("India");
+            int z = MyMethod2(7, 7);
+            Console.WriteLine(z);
+        }
+    }
+}

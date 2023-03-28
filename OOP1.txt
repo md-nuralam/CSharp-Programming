@@ -1,0 +1,69 @@
+//Program/Main Class
+
+using System;
+
+
+namespace ConsoleApplication
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Person myObj = new Person();
+            myObj.firstName = "Md. Nur Alam";
+            myObj.lastName = "Polash";
+            string x = myObj.FullName();
+            Console.WriteLine(x) ;
+
+            Car myObj2 = new Car();
+            myObj2.CarName();
+            
+        }
+    }
+}
+
+//Person Class
+
+using System;
+
+
+namespace ConsoleApplication
+{
+    internal class Person
+    {
+        public string firstName;
+        public string lastName;
+
+        public string FullName()
+        {
+            string fullName = firstName + " " + lastName;
+            return fullName;
+        }
+    }
+}
+
+//Car Class
+
+using System;
+
+
+namespace ConsoleApplication
+{
+    internal class Car
+    {
+        public string[] carName = { "Ferari", "Lomborgini", "Tesla" };
+
+        public void CarName()
+        {
+            foreach(string i in carName)
+            {
+                Console.WriteLine(i);
+            }
+
+            for(int i=0; i<carName.Length; i++)
+            {
+                Console.WriteLine(carName[i]);
+            }
+        }
+    }
+}
